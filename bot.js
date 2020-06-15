@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
 const ytdl = require("ytdl-core");
 
@@ -7,11 +7,11 @@ const PREFIX = '!';
 
 var servers = {};
 
-bot.on('ready', () =>{
+client.on('ready', () =>{
     console.log('Il bot è pronto, Rek.');
 })
 
-bot.on('message', message=>{
+client.on('message', message=>{
    
     let args = message.content.slice(PREFIX.lenght).split(" ");
 
@@ -40,4 +40,4 @@ bot.on('message', message=>{
     }
 })
 
-bot.login(token);
+client.login(token);
