@@ -3,8 +3,6 @@ const bot = new Discord.Client();
 
 const ytdl = require("ytdl-core");
 
-const token = 'NzIxNzg1OTY4NDk5MDk3NjMy.XuZmNg.OpBpSxzlljRXz-qptE47LS0T2s0';
-
 const PREFIX = '!';
 
 var servers = {};
